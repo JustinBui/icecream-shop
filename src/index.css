@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+/* base styles */
+body {
+  margin: 0;
+  font-family: cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: repeating-linear-gradient(
+    to right,
+    #d0f0f9,
+    #d0f0f9 10px,
+    #ffffff 10px,
+    #ffffff 20px
+  );
+
+  color: rgb(84, 36, 36);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} 
+
+h1 {
+  color:#f1356d;
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+}
+
+.page-section {
+  margin: 50px;
+}
+
+.page-section {
+  background-color: pink;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+/* Order */
+.order select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  /* display: block; */
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.order button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toppings-checkboxes {
+  padding: 10px; 
+}
+
+
+.icecream-preview {
+  background-color: #99dcef;
+  border-radius: 10px;
+}
+
+.icecream-preview button {
+  background: #ff004c;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3px;
+}
