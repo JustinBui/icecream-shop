@@ -3,16 +3,32 @@
     {
       "coneOrCup": "Cone",
       "flavor": "Vanilla",
-      "syrup": "Strawberry",
-      "scoops": "1",
+      "syrup": "Caramel",
+      "scoops": "4",
+      "cost_string": "4.50",
+      "tax_string": "0.23",
+      "total_cost_string": "4.72",
       "id": 1
     },
     {
-      "coneOrCup": "Cup",
-      "flavor": "Strawberry",
+      "coneOrCup": "Cone",
+      "flavor": "Mint-chocolate-chip",
       "syrup": "Chocolate",
-      "scoops": "4",
+      "scoops": "2",
+      "cost_string": "2.50",
+      "tax_string": "0.13",
+      "total_cost_string": "2.63",
       "id": 2
+    },
+    {
+      "coneOrCup": "Cone",
+      "flavor": "Vanilla",
+      "syrup": "Caramel",
+      "scoops": "5",
+      "cost_string": "5.50",
+      "tax_string": "0.28",
+      "total_cost_string": "5.78",
+      "id": 3
     }
   ]
 }

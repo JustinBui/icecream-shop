@@ -28,6 +28,7 @@ const OrderList = ({title, allOrders}) => {
                         <div className="icecream-text">
                             <p><strong>Order ID { item.id }:</strong> { item.flavor } { item.coneOrCup } ({item.scoops} {item.scoops > 1 ? 'Scoops' : 'Scoop'})</p>
                             <p>Syrup: { item.syrup }</p>
+                            <p>Your Total: ${ item.cost_string } ( + ${ item.tax_string } tax) = ${ item.total_cost_string }</p>
                         </div>
                         
                         {/* <button onClick={ handleDelete }><a href={`http://localhost:8000/orders/${item.id}`}>Delete</a></button> */}

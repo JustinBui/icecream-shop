@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 const CreateOrder = () => {
     const [coneOrCup, setConeOrCup] = useState('Cone');
     const [flavor, setFlavor] = useState('Vanilla');
-    const [syrup, setSyrup] = useState('Strawberry');
+    const [syrup, setSyrup] = useState('None');
     const [scoops, setScoops] = useState(0);
 
     const [isPending, setIsPending] = useState(false);
@@ -14,7 +14,26 @@ const CreateOrder = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const order = { coneOrCup, flavor, syrup, scoops };
+        // Calculating cost
+        let cost = 0;
+        cost = cost + (coneOrCup === 'Cone' ? 2.50 : 2.00);
+        cost = scoops * 1.00
+        cost = cost + (syrup === 'None' ? 0 : 0.50);
+        const cost_string = cost.toFixed(2); // Decimal number printed in 2 precisions
+
+        // Calculating tax
+        let tax = cost * 0.05;
+        const tax_string = tax.toFixed(2);
+
+        // Total cost (Plus tax)
+        let total_cost = cost + tax;
+        const total_cost_string = total_cost.toFixed(2);
+
+
+        const order = { coneOrCup, flavor, syrup, scoops, cost_string, tax_string, total_cost_string};
+        
+
+
         setIsPending(true);
 
         // Make POST request
@@ -69,6 +88,7 @@ const CreateOrder = () => {
 
                 <label>Syrup</label>
                 <select value={ syrup } className="syrup-select" onChange={(e) => setSyrup(e.target.value)}>
+                    <option value="None">None</option>
                     <option value="Strawberry">Strawberry</option>
                     <option value="Chocolate">Chocolate</option>
                     <option value="Caramel">Caramel</option>
