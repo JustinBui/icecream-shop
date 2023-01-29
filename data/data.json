@@ -2,45 +2,9 @@
   "orders": [
     {
       "coneOrCup": "Cone",
-      "flavor": "Strawberry",
-      "syrup": "Chocolate",
+      "flavor": "Vanilla",
+      "syrup": "Strawberry",
       "id": 1
-    },
-    {
-      "coneOrCup": "Cup",
-      "flavor": "Chocolate",
-      "syrup": "Strawberry",
-      "id": 2
-    },
-    {
-      "coneOrCup": "Cone",
-      "flavor": "Vanilla",
-      "syrup": "Strawberry",
-      "id": 3
-    },
-    {
-      "coneOrCup": "Cup",
-      "flavor": "Cookies-n-cream",
-      "syrup": "Caramel",
-      "id": 4
-    },
-    {
-      "coneOrCup": "Cone",
-      "flavor": "Vanilla",
-      "syrup": "Strawberry",
-      "id": 5
-    },
-    {
-      "coneOrCup": "Cone",
-      "flavor": "Cookies-n-cream",
-      "syrup": "Strawberry",
-      "id": 6
-    },
-    {
-      "coneOrCup": "Cone",
-      "flavor": "Chocolate",
-      "syrup": "Chocolate",
-      "id": 7
     }
   ]
 }

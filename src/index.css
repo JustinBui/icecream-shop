@@ -102,10 +102,15 @@ h1 {
 
 .icecream-preview button {
   background: #ff004c;
-  color: #fff;
+  /* color: #fff; */
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
   margin: 3px;
+}
+
+.icecream-preview a {
+  text-decoration: none;
+  color: white;
 }
