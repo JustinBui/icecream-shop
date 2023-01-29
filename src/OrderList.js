@@ -1,7 +1,7 @@
-import { Link, useHistory } from 'react-router-dom';
+// import { Link, useHistory } from 'react-router-dom';
 
 const OrderList = ({title, allOrders}) => {
-    const history = useHistory();
+    // const history = useHistory();
 
     const handleDelete = (e) => {
         const id = e.target.getAttribute('data-id');
@@ -26,7 +26,7 @@ const OrderList = ({title, allOrders}) => {
                 allOrders.map((item) => (
                     <div className="icecream-preview" key={ item.id }>
                         <div className="icecream-text">
-                            <p><strong>Order ID { item.id }:</strong> { item.flavor } { item.coneOrCup }</p>
+                            <p><strong>Order ID { item.id }:</strong> { item.flavor } { item.coneOrCup } ({item.scoops} {item.scoops > 1 ? 'Scoops' : 'Scoop'})</p>
                             <p>Syrup: { item.syrup }</p>
                         </div>
                         

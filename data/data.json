@@ -4,7 +4,15 @@
       "coneOrCup": "Cone",
       "flavor": "Vanilla",
       "syrup": "Strawberry",
+      "scoops": "1",
       "id": 1
+    },
+    {
+      "coneOrCup": "Cup",
+      "flavor": "Strawberry",
+      "syrup": "Chocolate",
+      "scoops": "4",
+      "id": 2
     }
   ]
 }

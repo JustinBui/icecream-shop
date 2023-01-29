@@ -5,6 +5,8 @@ const CreateOrder = () => {
     const [coneOrCup, setConeOrCup] = useState('Cone');
     const [flavor, setFlavor] = useState('Vanilla');
     const [syrup, setSyrup] = useState('Strawberry');
+    const [scoops, setScoops] = useState(0);
+
     const [isPending, setIsPending] = useState(false);
 
     const history = useHistory();
@@ -12,7 +14,7 @@ const CreateOrder = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const order = { coneOrCup, flavor, syrup };
+        const order = { coneOrCup, flavor, syrup, scoops };
         setIsPending(true);
 
         // Make POST request
@@ -54,6 +56,8 @@ const CreateOrder = () => {
                     <option value="Cookies-n-cream">Cookies n' Cream</option>
                 </select>
 
+                <label>Number of Scoops</label>
+                <input required type="number" min="1" max="5" onChange={(e) => setScoops(e.target.value)}></input>
                 {/* <label>Toppings</label>
                 <div className="toppings-checkboxes">
                     <input type="checkbox" name=""/>
@@ -74,7 +78,7 @@ const CreateOrder = () => {
                 { isPending && <button disabled>Pending...</button>}
             </form>
 
-            {/* <p>{ flavor }, { coneOrCup }, { syrup }</p> */}
+            {/* <p>{ flavor }, { coneOrCup }, { syrup } { scoops }</p> */}
         </div>
     );
 }

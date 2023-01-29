@@ -2,9 +2,9 @@ const Home = () => {
     return (
         <div className="home page-section">
             <h1>HOME &#127968;</h1>
-            <h2>-- Cone ($1.50) or Cup ($1.00) --</h2>
+            <h2>-- Cone ($2.50) or Cup ($2.00) --</h2>
 
-            <h3>Our Flavors:</h3> 
+            <h3>Our Flavors ($1.00 per scoop):</h3> 
             <p>Vanilla, Chocolate, Strawberry, Mint Chocolate Chip, Cookies n' Cream</p>
             <br/>
 
