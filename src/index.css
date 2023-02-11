@@ -11,8 +11,8 @@ body {
     to right,
     #d0f0f9,
     #d0f0f9 10px,
-    #ffffff 10px,
-    #ffffff 20px
+    white 10px,
+    white 20px
   );
 
   color: rgb(84, 36, 36);
@@ -51,7 +51,11 @@ h1 {
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
+
+  background-color: white;
+  border-radius: 100px;
+  border:2px solid rgb(84, 36, 36);
 }
 
 .navbar .links {
